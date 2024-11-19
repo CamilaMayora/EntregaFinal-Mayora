@@ -114,6 +114,7 @@ header {
     text-align: center;
     border-bottom: 1px solid var(--letras);
     box-shadow: 5px 5px 25px var(--efectos);
+    margin: 0%;
 }
 
 #link{
@@ -317,36 +318,10 @@ nav a:hover{
     padding: 10px;
 }
 
-
-/*---SUCURSALES---*/
-
-.map-card-container{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-evenly;
-
-    color: whitesmoke;
-    font-size: 20px;
-}
-
-.map-card-container div{
-    border: #32cd32 2px solid;
-    box-shadow: #32cd32 5px 5px 5px;
-    background-color: #808080;
-    margin: 30px;
-
-    height: 600px;
-    width: 400px;
-
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-/*---SOBRE NOSOTROS---*/
+/*!--SOBRE NOSOTROS--*/
 
 .we-card{
-    color: whitesmoke;
+    color:var(--extra);
 
     font-size: 30px;
     font-weight: 400;
@@ -354,8 +329,8 @@ nav a:hover{
     margin-top: 60px;
     
 
-    background-image: url("../img/banner1.jpg");
-    background-position:center;
+    background-image: url("../img/img-4.jpg");
+    background-position:top;
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
@@ -364,90 +339,73 @@ nav a:hover{
 
 .we-card h1{
     font-size: 80px;
-    color: #32cd32;
+    color:var(--extra);
 
     font-weight: 800;
     text-align: center;
     display: inline-block;
 
     margin-top: 100px;
-    text-shadow: #000000 5px 5px 5px;
+    text-shadow:var(--efectos) 5px 5px 5px;
 }
 
 .we-card h4{
     font-size: 45px;
-    color: #ffffff;
+    color:var(--extra);
 
     font-weight: 800;
     text-align: center;
     display: inline-block;
     
     margin-top: 20px;
-    text-shadow: #32cd32 5px 5px 5px;
+    text-shadow:var(--efectos) 5px 5px 5px;
 }
 
-.goals-card{
-    text-align: center;
-    color: #000000;
-    font-size: 25px;
-    font-weight: 400;
+.clases-card{
+    font-size:35px;
+    font-weight: 500;
+    color: var(--extra);
 
-    margin: 50px 20px 30px 20px;
-    padding: 30px;
-
-    background-color: #808080;
-    border: #32cd32 2px solid;
-    box-shadow: #32cd32 5px 5px 5px;
+    margin: 15px;
 }
 
-.goals-card h2{
-    color: #32cd32;
-    margin: 10px;
-    text-shadow: #000000 5px 5px 5px;
-}
-
-.goals-card h4{
-    color: #00ff0d;
-    font-size: 40px;
-    text-shadow: #000000 5px 5px 5px;
-}
-
-
-.form-card .form-card-container{
+#div-one{
     display: flex;
-    flex-wrap: wrap;
-    flex-direction: column;
     align-items: center;
-    margin: 10px 30px 10px 30px;
 }
 
-.form-card label{
-    color: #000000;
-    font-size: 18px;
-    font-weight: 600;
-
-    margin: 10px 5px;
-    padding: 5px;
+#div-two{
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
 }
 
-.form-card input{
-    height: 30px;
-    width: 750px;
-
-    padding: 5px; 
-    border: 2px solid #32cd32;
-    border-radius: 5px; 
-    box-shadow: #32cd32 5px 5px 5px;
-
-    margin: 5px;
+#div-three{
+    display: flex;
+    align-items: center;
 }
 
-.form-card-container textarea{
-    border: 2px solid #32cd32;
-    border-radius: 4px; 
-    box-shadow: #32cd32 5px 5px 5px;
+#div-four{
+    display: flex;
+    align-items: center;
 }
 
+#div-five{
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+}
+
+.clases-card img{
+    height: 500px;
+    width: 600px;
+    margin: 10px;
+
+    border: var(--efectos) 1px solid;
+    box-shadow: var(--efectos) 3px 3px 3px;
+}
+
+/*!--CONTACTO--*/
 .contact-card{
     color: var(--letras);
     text-shadow: var(--extra) 2px 4px 2px;
@@ -480,38 +438,37 @@ nav a:hover{
     padding: 5px;
 }
 
+/*!SUCURSALES--*/
 
-
-.data-card{
+.search-card{
     text-align: center;
-    margin: 70px 0;
-
-    font-size: 30px;
-    font-weight: 300;
 }
 
-.data-card h2{
-    color: #32cd32;
-    text-shadow: #000000 5px 5px 5px;
+.search-card input{
+    width: 350px;
+    height: 50px;
+    border-radius: 5px;
+
+    border-color: var(--extra);
+    background-color: var(--fondo);
 }
 
-.data-card img{
-    height: 500px;
-    width: 900px;
+.map-card-container{
+    display: grid;
+    grid-template-columns:1fr 1fr 1fr 1fr;
+    gap: 5px; 
+}
+
+.map-card-container div{
+    border:var(--efectos) 2px solid;
+    box-shadow:var(--extra2) 5px 5px 5px;
+    background-color:var(--efectos2);
+    color: var(--extra);
     margin: 15px;
 
-    border: #32cd32 2px solid;
-    box-shadow: #32cd32 5px 5px 5px;
+    height: 600px;
+    width: 400px;
 }
-
-.data-card-conteiner{
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    padding: 5px;
-
-}
-
 
 
 .city-card{
@@ -596,5 +553,14 @@ nav a:hover{
     .button-two{
         border: var(--extra) 2px solid;
         color: var(--extra);
+    }
+
+    .contact-card{
+        background-image: none;
+        color:var(--extra);
+        text-shadow: var(--efectos) 2px 4px 2px;
+        background-color: var(--efectos2);
+        border: var(--efectos2) 2px solid;
+        box-shadow: var(--efectos) 5px 5px 5px;
     }
 }
