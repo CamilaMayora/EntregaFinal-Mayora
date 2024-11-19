@@ -515,14 +515,26 @@ nav a:hover{
         color:var(--extra);
         text-shadow: var(--fondo) 1px 1px 1px;
     }
+
+    .hero-card{
+        background-image: none;
+        background-color: var(--fondo);
+        box-shadow: var(--extra) 5px 5px 5px;
+    }
+
+    .hero-card button{
+        color: var(--extra);
+        border: var(--extra) 2px solid;
+    }
     
     #menu:checked + .menu-icon + #link {
         display: flex;
+        align-items: flex-start;
     }
 }
 
 
-@media (max-width:500px){
+@media (max-width:600px){
     body{
         width: 100vmax;
     }
@@ -535,6 +547,15 @@ nav a:hover{
         font-size: 10px;
     }
 
+    .contact-card{
+        background-image: none;
+        color:var(--extra);
+        text-shadow: var(--efectos) 2px 4px 2px;
+        background-color: var(--efectos2);
+        border: var(--efectos2) 2px solid;
+        box-shadow: var(--efectos) 5px 5px 5px;
+    }
+    
     .gym-card-container{
         width: 100vmax;
         align-items: center;
