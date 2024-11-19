@@ -472,8 +472,8 @@ nav a:hover{
 
 
 .city-card{
-    background-image: url("../img/banner1.jpg");
-    background-position:center;
+    background-image: url("../img/img-4.jpg");
+    background-position: start;
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
@@ -486,11 +486,38 @@ nav a:hover{
 .city-card h1{
     font-size: 80px;
     font-weight: 800;
-    color: #32cd32;
+    color:var(--letras);
     display: flex;
     justify-content: center;
     padding: 100px;
-    text-shadow: #000000 5px 5px 5px;
+    text-shadow:var(--extra) 5px 5px 5px;
+}
+
+.data-card{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: stretch;
+}
+
+.data-card-conteiner{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-items: center;
+
+    color: var(--letras);
+    font-size: 25px;
+    font-weight: 400;
+
+    margin: 15px;
+    padding: 5px;
+}
+
+.data-card-conteiner img{
+    width: 700px;
+    height: 600px;
 }
 
 @media (max-width:950px) {
@@ -507,7 +534,8 @@ nav a:hover{
         text-align: start;
         position: absolute;
         padding-top: 20px;
-        background-color: var(--efectos2);
+        background-color: var(--letras);
+        border-bottom: var(--extra) 2px solid;
         width: 100vmax;
     }
 

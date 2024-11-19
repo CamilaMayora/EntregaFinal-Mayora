@@ -25,68 +25,100 @@
             <a href="#idea"><button class="button-two">SI QUIERO</button></a>
         </section>
         <section class="data-card">
-            <h2>Cosas Necesarias:</h2>
+            <h2 class="title-card">Cosas Necesarias:</h2>
             <div class="data-card-conteiner">
             <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Harum nostrum odio quo earum eligendi sapiente illo et ad voluptate amet necessitatibus, doloribus eius! Culpa qui rem possimus, consectetur quidem commodi! Lorem ipsum dolor, sit amet consectetur adipisicing elit. Veniam in, eligendi, maxime inventore similique hic magnam, eos odit accusamus voluptatibus repellat dolores vero pariatur accusantium laudantium earum iure. Fuga, deserunt. Lorem ipsum dolor sit amet consectetur adipisicing elit. In expedita autem, excepturi quibusdam dolorem illum et? Eaque necessitatibus nostrum nulla neque, temporibus sunt, odit qui libero labore facere soluta repellendus. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Impedit doloribus, ex nobis quos non rerum hic quidem quibusdam quam optio quisquam facilis, quod alias blanditiis eum at consequuntur harum? Aspernatur!</p>
-            <img src="../img/banner1.jpg" alt="Foto Gym">
+            <img src="../img/img-3.jpg" alt="Foto Gym">
             </div>
         </section>
-        <section>
+
+        <section id="pay">
+            <h2 class="title-card">Arma tu K2FIT</h2>
             <div class="pay-card-container">
 
-                <div class="card text-center mb-3" style="width: 18rem;">
-                    <div class="card-body">
-                    <h5 class="card-title">Basico</h5>
-                    <p class="card-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ab aut 
-                        officiis adipisci quo sapiente excepturi reiciendis consectetur repellat odit.</p>
-                        modi molestiae rerum. Temporibus doloribus iure voluptates ipsum quod, dignissimos aut
-                </div>
+            <h3  class="subtitle-card">Inversion</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem, necessitatibus. Quis voluptates corrupti 
+                blanditiis iusto mollitia impedit ducimus, quisquam ad exercitationem, eaque quidem eligendi molestias 
+                eveniet, accusantium esse soluta accusamus.</p>
 
-                <div class="card text-center mb-3" style="width: 18rem;">
+                <div class="card" style="width: 18rem;">
                     <div class="card-body">
-                    <h5 class="card-title">Lorem</h5>
-                    <p class="card-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ab aut 
-                    officiis adipisci quo sapiente excepturi reiciendis consectetur repellat odit.</p>
-                    modi molestiae rerum. Temporibus doloribus iure voluptates ipsum quod, dignissimos aut
+                    <h5 class="card-title">Inicio:</h5>
+                    <ul>
+                        <li>46.000usd</li>
+                        <li>Profesionales de Nutricion</li>
+                        <li>Salas</li>
+                        <li>K2FIT Points</li>
+                    </ul>
                     </div>
                 </div>
 
-                <div class="card text-center mb-3" style="width: 18rem;">
+                <div class="card" style="width: 18rem;">
                     <div class="card-body">
-                    <h5 class="card-title">Lorem</h5>
-                    <p class="card-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ab aut 
-                    officiis adipisci quo sapiente excepturi reiciendis consectetur repellat odit.</p>
-                    modi molestiae rerum. Temporibus doloribus iure voluptates ipsum quod, dignissimos aut
+                    <h5 class="card-title">Ganancias:</h5>
+                    <ul>
+                        <p>Precio estimado de ganancias anuales:</p>
+                        <li>20.000 usd</li>
+                    </ul>
+                    </div>
                 </div>
             </div>
-        </section>
-        <section class="title-card" id="idea">
-            <h3>LLeva K2FIT a cualquier parte de ARGENTINA:</h3>
-            <form action="POST" class="form-card">
-                <div class="form-card-container">
+            </section>
 
-                <label for="">Nombre/s:</label>
-                <input type="text" placeholder="Ingrese Nombre...">
+            <section class="form-card-one">
+                <form class="row g-3">
 
-                <label for="lastname">Apellido/s:</label>
-                <input type="text" placeholder="Ingrese Apellido...">
+                    <div class="col-md-6">
+                        <label for="inputEmail4" class="form-label">Email</label>
+                        <input type="email" class="form-control" id="inputEmail4" placeholder="name@123.com">
+                    </div>
 
-                <label for="">Ciudad:</label>
-                <input type="text" placeholder="Ingrese Sucursal...">
+                    <div class="col-md-6">
+                        <label for="inputname" class="form-label">Nombre Completo</label>
+                        <input type="text" class="form-control" id="inputname" placeholder="Homer Simpson">
+                    </div>
 
-                <label for="">Mail:</label>
-                <input type="email" placeholder="Ingrese Mail...">
+                    <div class="col-12">
+                        <label for="inputAddress" class="form-label">Direccion del Lugar Reacondicionar:</label>
+                        <input type="text" class="form-control" id="inputAddress" placeholder="Calle Falsa 123">
+                    </div>
 
-                <label for="">Telefono de Contacto:</label>
-                <input type="tel" placeholder="+54 1111111111">
+                    <div>
+                        <label for="inputAddress2" class="form-label">Telefono de Contacto:</label>
+                        <input type="tel" class="form-control" id="inputAddress2" placeholder="+54 12345678">
+                    </div>
 
-                <label for="">Contanos tu Idea:</label>
-                <textarea name="consulta" id="" cols="80" rows="20" placeholder="Comentanos"></textarea>
+                    <div class="col-md-6">
+                        <label for="inputCity" class="form-label">City</label>
+                        <input type="text" class="form-control" id="inputCity" placeholder="Springfield">
+                    </div>
 
-                </div>
-            </form>
-            <button type="submit" class="button-two">Enviar.</button>
-        </section>
+                    <div class="col-md-4">
+                        <label for="inputState" class="form-label">Provincia</label>
+                        <select id="inputState" class="form-select">
+                        <option selected>Buenos Aires</option>
+                        <option>opcion1</option>
+                        <option>opcion2</option>
+                        <option>opcion3</option>
+                        <option>opcion4</option>
+                        <option>opcion5</option>
+                        </select>
+                    </div>
+
+                    <div class="col-md-2">
+                        <label for="inputZip" class="form-label">Codigo Postal</label>
+                        <input type="text" class="form-control" id="inputZip" placeholder="1111">
+                    </div>
+
+                    <div class="mb-3">
+                        <label for="exampleFormControlTextarea1" class="form-label">Contanos tu idea:</label>
+                        <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                      </div>
+
+                    <div class="col-12">
+                        <button type="submit" class="btn button">Enviar</button>
+                    </div>
+                </form>
         <section class="arrow-card">
             <a href="#UP"><img src="../img/flecha-hacia-arriba.png" alt=""></a>
         </section>
