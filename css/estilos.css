@@ -1,0 +1,237 @@
+@import url("https://fonts.googleapis.com/css2?family=Kalam:wght@300;400;700&family=Quicksand:wght@300..700&display=swap");
+body {
+  margin: 0%;
+  padding: 0%;
+  background-color: #52253d;
+  font-family: Quicksand;
+}
+
+/*!---BOTONES---*/
+.button {
+  height: 50px;
+  border-radius: 10px;
+  width: 200px;
+  font-size: 15px;
+  font-weight: 700;
+  border: #b25780 2px solid;
+  padding: 5px;
+  background-color: #52253d;
+  cursor: pointer;
+  color: #ffffff;
+}
+.button:hover {
+  background-color: #ff80b3;
+  color: #c15970;
+  border: 2px solid #c15970;
+}
+
+.button-two {
+  height: 60px;
+  border-radius: 10px;
+  width: 300px;
+  font-size: 18px;
+  font-weight: 700;
+  margin-bottom: 10px;
+  margin-top: 40px;
+  cursor: pointer;
+  border: #b25780 2px solid;
+  color: #000000;
+  background-color: #52253d;
+}
+.button-two:hover {
+  background-color: #ff80b3;
+  color: #ffffff;
+  border: 2px solid #c15970;
+}
+
+/*!---TITULOS---*/
+.title-card {
+  color: #b25780;
+  font-family: Quicksand;
+  font-size: 50px;
+  font-weight: 700;
+  margin-top: 100px;
+  margin-bottom: 50px;
+  position: relative;
+  text-align: center;
+  text-shadow: #ffffff 2px 3px 2px;
+}
+
+.subtitle-card {
+  color: #ffffff;
+  font-size: 25px;
+  font-weight: 400;
+  text-shadow: #ff80b3 2px 3px 2px;
+}
+
+header {
+  height: 70px;
+  text-align: center;
+  border-bottom: 1px solid #b25780;
+  box-shadow: 5px 5px 25px #ff80b3;
+  margin: 0%;
+}
+header nav .menu-icon {
+  display: none;
+}
+header nav .menu {
+  display: none;
+}
+header nav #link {
+  display: grid;
+  grid-template-columns: 200px 200px 200px 200px 200px;
+  column-gap: 10px;
+  justify-content: center;
+  align-items: center;
+  justify-items: center;
+}
+header nav #link li {
+  list-style: none;
+  margin-top: 20px;
+  font-size: 20px;
+  font-weight: 600;
+}
+header nav #link li a {
+  text-decoration: none;
+  color: #b25780;
+  padding: 10px;
+}
+header nav #link li a:hover {
+  color: #ff80b3;
+}
+
+main .hero-card {
+  color: #b25780;
+  text-shadow: #ffffff 3px 2px 2px;
+  text-align: center;
+  margin-top: 60px;
+  background-image: url("../img/onlymujeres.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  height: 800px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+main .hero-card h1 {
+  font-size: 80px;
+  font-weight: 800;
+}
+main .hero-card h2 {
+  font-size: 40px;
+}
+main .gym-card-container {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+main .gym-card-container div {
+  border: rgba(143, 75, 111, 0.4039215686) 2px solid;
+  height: 600px;
+  width: 504px;
+  color: #ffffff;
+  background-color: rgba(143, 75, 111, 0.4039215686);
+  box-shadow: #ff80b3 5px 5px 5px;
+  text-align: center;
+  font-size: 25px;
+  font-weight: 700;
+}
+main .gym-card-container img {
+  height: 400px;
+  width: 500px;
+}
+main .info-card {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row-reverse;
+  justify-content: space-evenly;
+  align-items: center;
+  text-align: center;
+  margin-top: 100px;
+  color: #ffffff;
+  font-size: 30px;
+  font-weight: 800;
+  border: rgba(143, 75, 111, 0.4039215686) 1px solid;
+  background-color: rgba(143, 75, 111, 0.4039215686);
+  box-shadow: #ff80b3 5px 5px 5px;
+}
+main .pay-card-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  text-align: center;
+  color: #ffffff;
+  font-size: 30px;
+}
+main .pay-card-container .card {
+  display: flex;
+  justify-content: center;
+  border: #ff80b3 2px solid;
+  background-color: #52253d;
+  color: #ffffff;
+  box-shadow: 5px 5px 5px #ff80b3;
+  height: 300px;
+  width: 250px;
+  font-size: 18px;
+}
+main .pay-card-container h5 {
+  text-align: center;
+  border-bottom: #ff80b3 2px solid;
+  font-size: 30px;
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+main .pay-card-container .card-text {
+  display: flex;
+  flex-direction: column;
+}
+main .text-card {
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+  color: #ffffff;
+  margin-top: 80px;
+  font-weight: 500;
+  font-size: 30px;
+  text-align: center;
+}
+main .text-card h2 {
+  color: #b25780;
+  text-shadow: #ffffff 2px 2px 2px;
+}
+main .arrow-card {
+  position: fixed;
+  right: 40px;
+  bottom: 90px;
+}
+
+.footer-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 60px;
+  width: auto;
+  height: 300px;
+  border-top: 2px solid #b25780;
+  box-shadow: 5px 5px 25px #ff80b3;
+}
+.footer-card h2, .footer-card h4 {
+  margin-top: 20px;
+  color: #ff80b3;
+  font-size: 25px;
+}
+.footer-card h3 {
+  font-size: 25px;
+  color: #ffffff;
+  margin-top: 10px;
+  text-shadow: #ff80b3 2px 2px 2px;
+}
+.footer-card div {
+  margin-top: 10px;
+  padding: 10px;
+}
+
+/*# sourceMappingURL=estilos.css.map */

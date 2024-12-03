@@ -1,0 +1,118 @@
+
+main{
+    .hero-card{
+        color:$letras;
+        text-shadow:$extra 3px 2px 2px;
+        text-align: center;
+        margin-top: 60px;
+        background-image: url("../img/onlymujeres.jpg");
+        background-position:center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-attachment: fixed;
+        height: 800px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+
+        h1{
+            font-size: 80px;
+            font-weight: 800;
+        }
+
+        h2{
+            font-size: 40px;
+        }
+    }
+
+    .gym-card-container{
+        display: flex;
+        justify-content: space-around;
+        flex-wrap: wrap;
+        div{
+            border:$efectos2 2px solid;
+            height: 600px;
+            width: 504px;
+            color:$extra;
+            background-color:$efectos2;
+            box-shadow:$efectos 5px 5px 5px;
+            text-align: center;
+            font-size: 25px;
+            font-weight: 700;
+        }
+
+        img{
+            height: 400px;
+            width: 500px;
+        }
+    }
+
+    .info-card{
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row-reverse;
+        justify-content: space-evenly;
+        align-items: center;
+        text-align: center;
+        margin-top: 100px;
+        color:$extra;
+        font-size: 30px;
+        font-weight: 800;
+        border:$efectos2 1px solid;
+        background-color:$efectos2;
+        box-shadow:$efectos 5px 5px 5px;
+    }
+
+    .pay-card-container{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+        text-align: center;
+        color:$extra;
+        font-size: 30px;
+        .card{
+            display: flex;
+        justify-content: center;
+        border:$efectos 2px solid;
+        background-color:$fondo;
+        color:$extra;
+        box-shadow: 5px 5px 5px $efectos;
+        height: 300px;
+        width: 250px;
+        font-size: 18px;
+        }
+        h5{
+            text-align: center;
+            border-bottom:$efectos 2px solid;
+            font-size: 30px;
+            font-weight: 700;
+            margin-bottom: 20px;
+        }
+        .card-text{
+            display: flex;
+            flex-direction: column;
+        }
+    }
+
+    .text-card{
+        display: flex;
+        align-items: flex-start;
+        flex-direction: column;
+        color:$extra;
+        margin-top: 80px;
+        font-weight: 500;
+        font-size: 30px;
+        text-align: center;
+        h2{
+            color:$letras;
+            text-shadow:$extra 2px 2px 2px;
+        }
+    }
+
+    .arrow-card{
+        position: fixed;
+    
+        right:40px;
+        bottom: 90px;
+    }
+}

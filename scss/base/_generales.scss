@@ -1,0 +1,71 @@
+@import url('https://fonts.googleapis.com/css2?family=Kalam:wght@300;400;700&family=Quicksand:wght@300..700&display=swap');
+
+
+body{
+    margin: 0%;
+    padding: 0%;
+    background-color:$fondo;
+    font-family: Quicksand; 
+}
+
+/*!---BOTONES---*/
+
+.button{
+    height: 50px;
+    border-radius: 10px;
+    width: 200px;
+    font-size: 15px;
+    font-weight: 700;
+    border:$letras 2px solid;
+    padding: 5px;
+    background-color: $fondo;
+    cursor: pointer;
+    color:$extra;
+    &:hover{
+        background-color:$efectos;
+        color:$extra2;
+        border:2px solid $extra2;
+    }
+}
+
+.button-two{
+    height: 60px;
+    border-radius: 10px;
+    width: 300px;
+    font-size: 18px;
+    font-weight: 700;
+    margin-bottom: 10px;
+    margin-top: 40px;
+    cursor: pointer;
+    border:$letras 2px solid;
+    color:#000000;
+    background-color:$fondo;
+    &:hover{
+
+        background-color:$efectos;
+        color:$extra;
+        border:2px solid $extra2 ;
+    }
+}
+
+/*!---TITULOS---*/
+.title-card{
+    color:$letras;
+    font-family: Quicksand;
+    font-size: 50px;
+    font-weight: 700;
+    
+    margin-top: 100px;
+    margin-bottom: 50px;
+    position: relative;
+    text-align: center;
+
+    text-shadow:$extra 2px 3px 2px;
+}
+
+.subtitle-card{
+    color:$extra;
+    font-size: 25px;
+    font-weight: 400;
+    text-shadow:$efectos 2px 3px 2px;
+}
