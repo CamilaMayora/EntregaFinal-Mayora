@@ -12,7 +12,7 @@ body{
 
 .button{
     height: 50px;
-    border-radius: 10px;
+    @include borde-redondo;
     width: 200px;
     font-size: 15px;
     font-weight: 700;
@@ -22,15 +22,13 @@ body{
     cursor: pointer;
     color:nth($lista, 3);
     &:hover{
-        background-color:nth($lista, 1);
-        color:nth($lista, 4);
-        border:2px solid nth($lista, 4);
+        @extend .button-style;
     }
 }
 
 .button-two{
     height: 60px;
-    border-radius: 10px;
+    @include borde-redondo;
     width: 300px;
     font-size: 18px;
     font-weight: 700;
@@ -41,10 +39,7 @@ body{
     color:#000000;
     background-color:$fondo;
     &:hover{
-
-        background-color:nth($lista, 1);
-        color:nth($lista, 3);
-        border:2px solid nth($lista, 4) ;
+        @extend .button-style;
     }
 }
 

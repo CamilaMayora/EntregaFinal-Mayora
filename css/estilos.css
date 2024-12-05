@@ -1,4 +1,10 @@
 @import url("https://fonts.googleapis.com/css2?family=Kalam:wght@300;400;700&family=Quicksand:wght@300..700&display=swap");
+.button-style, .button-two:hover, .button:hover {
+  background-color: #ff80b3;
+  color: #c15970;
+  border: 2px solid #c15970;
+}
+
 body {
   margin: 0%;
   padding: 0%;
@@ -9,7 +15,7 @@ body {
 /*!---BOTONES---*/
 .button {
   height: 50px;
-  border-radius: 10px;
+  border-radius: 7px;
   width: 200px;
   font-size: 15px;
   font-weight: 700;
@@ -19,15 +25,9 @@ body {
   cursor: pointer;
   color: #ffffff;
 }
-.button:hover {
-  background-color: #ff80b3;
-  color: #c15970;
-  border: 2px solid #c15970;
-}
-
 .button-two {
   height: 60px;
-  border-radius: 10px;
+  border-radius: 7px;
   width: 300px;
   font-size: 18px;
   font-weight: 700;
@@ -38,12 +38,6 @@ body {
   color: #000000;
   background-color: #52253d;
 }
-.button-two:hover {
-  background-color: #ff80b3;
-  color: #ffffff;
-  border: 2px solid #c15970;
-}
-
 /*!---TITULOS---*/
 .title-card {
   color: #b25780;
@@ -216,8 +210,6 @@ main .arrow-card {
 }
 main .we-card {
   color: #ffffff;
-  font-size: 30px;
-  font-weight: 400;
   text-align: center;
   margin-top: 60px;
   background-image: url("../img/img-4.jpg");
@@ -305,7 +297,7 @@ main .search-card {
 }
 main .search-card input {
   width: 350px;
-  border-radius: 5px;
+  border-radius: 7px;
   height: 50px;
   background-color: #52253d;
   border-color: #ffffff;
@@ -313,7 +305,7 @@ main .search-card input {
 main .map-card-container {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
-  gap: 5px;
+  column-gap: 5px;
 }
 main .map-card-container div {
   border: #ff80b3 2px solid;
@@ -393,19 +385,66 @@ main .data-card-conteiner img {
   padding: 10px;
 }
 
+@media (max-width: 1725px) {
+  body {
+    width: 100vmax;
+  }
+  body main .search-card {
+    text-align: center;
+  }
+  body main .map-card-container {
+    display: grid;
+    grid-template-columns: 33% 33% 33%;
+    column-gap: 20px;
+    justify-items: center;
+  }
+  body main .map-card-container div {
+    margin: 5px;
+  }
+}
+@media (max-width: 1400px) {
+  body {
+    width: 100vmax;
+  }
+  body main .search-card {
+    text-align: center;
+  }
+  body main .map-card-container {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    column-gap: 20px;
+    justify-items: center;
+  }
+  body main .map-card-container div {
+    margin: 5px;
+  }
+  body main .city-card {
+    height: 650px;
+    border-bottom: 2px solid rgba(143, 75, 111, 0.4039215686);
+    box-shadow: #c15970 5px 5px 5px;
+  }
+  body main .city-card h1 {
+    color: #ff80b3;
+    text-shadow: #ffffff 5px 5px 5px;
+  }
+  body main .data-card-conteiner {
+    display: flex;
+    flex-direction: column;
+  }
+}
 @media (max-width: 950px) {
   body {
     width: 100vmax;
   }
-  header {
+  body header {
     width: 100vmax;
   }
-  header nav .menu-icon {
+  body header nav .menu-icon {
     display: block;
     cursor: pointer;
     color: #ffffff;
   }
-  header nav #link {
+  body header nav #link {
     display: none;
     width: 100%;
     text-align: start;
@@ -415,34 +454,34 @@ main .data-card-conteiner img {
     border-bottom: #ffffff 2px solid;
     width: 100vmax;
   }
-  header nav #link li a {
+  body header nav #link li a {
     color: #ffffff;
     text-shadow: #52253d 1px 1px 1px;
   }
-  header nav #menu:checked + .menu-icon + #link {
+  body header nav #menu:checked + .menu-icon + #link {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
   }
-  main .hero-card {
+  body main .hero-card {
     background-image: none;
     background-color: #52253d;
     box-shadow: #ffffff 5px 5px 5px;
   }
-  main .hero-card h1 {
+  body main .hero-card h1 {
     font-size: 70px;
     font-weight: 600;
   }
-  main .hero-card h2 {
+  body main .hero-card h2 {
     font-size: 30px;
     color: #ffffff;
     text-shadow: #ff80b3 3px 2px 2px;
   }
-  main .hero-card button {
+  body main .hero-card button {
     color: #ffffff;
     border: #ffffff 2px solid;
   }
-  main .contact-card {
+  body main .contact-card {
     background-image: none;
     color: #ffffff;
     text-shadow: #ff80b3 2px 4px 2px;
@@ -450,77 +489,108 @@ main .data-card-conteiner img {
     border: rgba(143, 75, 111, 0.4039215686) 2px solid;
     box-shadow: rgba(143, 75, 111, 0.4039215686) 5px 5px 5px;
   }
-  main .contact-card h1 {
+  body main .contact-card h1 {
     font-size: 70px;
     font-weight: 600;
   }
-  main .gym-card-container {
-    width: 100vmax;
-    align-items: center;
+  body main .gym-card-container {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
   }
-  .title-card {
+  body main .gym-card-container div {
+    height: 640px;
+  }
+  body main .we-card {
+    background-image: none;
+    border-bottom: rgba(143, 75, 111, 0.4039215686) 2px solid;
+    background-color: rgba(143, 75, 111, 0.4039215686);
+    box-shadow: 5px 5px 5px #ff80b3;
+  }
+  body main .we-card h1 {
+    color: #ff80b3;
+    text-shadow: #ffffff 2px 2px 2px;
+  }
+  body main .we-card h4 {
+    color: #ff80b3;
+    text-shadow: #ffffff 2px 2px 2px;
+    font-size: 40px;
+    font-weight: 600;
+  }
+  body main .clases-card {
+    text-align: center;
+    padding: 5px;
+    margin: 5px;
+  }
+  body main .clases-card .div-one {
+    display: flex;
+    flex-direction: column;
+  }
+  body main .clases-card .div-two {
+    display: flex;
+    flex-direction: column;
+  }
+  body main .search-card {
+    text-align: center;
+  }
+  body main .map-card-container {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    column-gap: 2px;
+    justify-items: center;
+  }
+  body main .map-card-container div {
+    margin: 5px;
+  }
+  body main .city-card {
+    background-image: none;
+    height: 650px;
+    border-bottom: 2px solid rgba(143, 75, 111, 0.4039215686);
+    box-shadow: #c15970 5px 5px 5px;
+  }
+  body main .city-card h1 {
+    color: #ff80b3;
+    text-shadow: #ffffff 5px 5px 5px;
+  }
+  body main .data-card-conteiner {
+    display: flex;
+    flex-direction: column;
+  }
+  body .title-card {
     color: #b25780;
     font-family: Quicksand;
     font-size: 45px;
     font-weight: 500;
   }
-  .subtitle-card {
+  body .subtitle-card {
     color: #ffffff;
     font-size: 27px;
     font-weight: 200;
+    padding: 5px;
     text-shadow: #ff80b3 2px 3px 2px;
   }
-  .letters {
+  body .letters {
     font-size: 27px;
     font-weight: 500;
+    padding: 9px;
     color: #ffffff;
     text-shadow: #ff80b3 2px 2px 2px;
   }
 }
-@media (max-width: 600px) {
+@media (max-width: 815px) {
   body {
     width: 100vmax;
   }
-  header {
-    width: 100vmax;
+  body main .search-card {
+    text-align: center;
   }
-  .hero-card {
-    width: 100vmax;
-    font-size: 10px;
+  body main .map-card-container {
+    display: grid;
+    grid-template-columns: 100%;
+    justify-items: center;
   }
-  .contact-card {
-    background-image: none;
-    color: var(--extra);
-    text-shadow: var(--efectos) 2px 4px 2px;
-    background-color: var(--efectos2);
-    border: var(--efectos2) 2px solid;
-    box-shadow: var(--efectos) 5px 5px 5px;
-  }
-  .gym-card-container {
-    width: 100vmax;
-    align-items: center;
-  }
-}
-@media (max-width: 400px) {
-  .hero-card {
-    background-image: none;
-    color: var(--extra);
-    text-shadow: var(--efectos) 2px 4px 2px;
-    background-color: var(--efectos2);
-    border: var(--efectos2) 2px solid;
-    box-shadow: var(--efectos) 5px 5px 5px;
-  }
-  .button-two {
-    border: var(--extra) 2px solid;
-    color: var(--extra);
-  }
-  .contact-card {
-    background-image: none;
-    color: var(--extra);
-    text-shadow: var(--efectos) 2px 4px 2px;
-    background-color: var(--efectos2);
-    border: var(--efectos2) 2px solid;
-    box-shadow: var(--efectos) 5px 5px 5px;
+  body main .map-card-container div {
+    margin: 5px;
   }
 }
 

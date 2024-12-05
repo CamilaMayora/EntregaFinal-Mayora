@@ -7,10 +7,14 @@ $efectos2: #8f4b6f67;
 $extra: #ffffff;
 $extra2: #c15970;
 
-$lista:$efectos, $efectos2, $extra, $extra2;
+$lista: $efectos, $efectos2, $extra, $extra2;
 
-%button-style{
+.button-style{
     background-color:$efectos;
     color:$extra2;
     border:2px solid $extra2;
+}
+
+@mixin borde-redondo{
+    border-radius: 7px;
 }

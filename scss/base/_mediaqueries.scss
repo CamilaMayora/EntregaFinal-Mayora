@@ -1,7 +1,62 @@
+@media (max-width: 1725px) {
+body{
+    width: 100vmax;
+    main{
+        .search-card{
+            text-align: center;
+        }
+        .map-card-container{
+            display: grid;
+            grid-template-columns: 33% 33% 33%;
+            column-gap: 20px;
+            justify-items: center;
+            div{
+                margin: 5px;
+                }
+        }
+    }
+}
+}
+
+@media (max-width: 1400px) {
+    body{
+        width: 100vmax;
+    
+        main{
+            .search-card{
+                text-align: center;
+            }
+            .map-card-container{
+                display: grid;
+                grid-template-columns: 50% 50%;
+                column-gap: 20px;
+                justify-items: center;
+                div{
+                    margin: 5px;
+                    }
+                }
+
+                .city-card{
+                    height: 650px;
+                    border-bottom: 2px solid nth($lista, 2);
+                    box-shadow:nth($lista, 4) 5px 5px 5px;
+                    h1{
+                        color: $efectos;
+                        text-shadow:nth($lista, 3) 5px 5px 5px;
+                    }
+                }
+                .data-card-conteiner{
+                    display: flex;
+                    flex-direction: column;
+                }
+            }
+        }
+    }
+    
+
 @media (max-width:950px) {
     body{
         width: 100vmax;
-    }
     header{
         width: 100vmax;
         nav{
@@ -30,9 +85,9 @@
                 display: flex;
                 flex-direction: column;
                 align-items: flex-start;
+                }
             }
         }
-    }
 
     main{
         .hero-card{
@@ -72,11 +127,80 @@
         }
 
         .gym-card-container{
-            width: 100vmax;
-            align-items: center;
+            display: flex;
+            flex-direction: column;
+            align-content: center;
+
+            div{
+                height: 640px;
+            }
+        }
+
+        .we-card{
+            background-image: none;
+
+            border-bottom: nth($lista, 2) 2px solid;
+            background-color:nth($lista, 2);
+            box-shadow: 5px 5px 5px nth($lista, 1);
+
+            h1{
+                color: nth($lista, 1);
+                text-shadow: nth($lista, 3) 2px 2px 2px;
+            }
+
+            h4{
+                color:nth($lista, 1);
+                text-shadow: nth($lista, 3) 2px 2px 2px;
+                font-size: 40px;
+                font-weight: 600;
+            }
+        }
+
+        .clases-card{
+            text-align: center;
+            padding: 5px;
+            margin: 5px;
+
+            .div-one{
+                display: flex;
+                flex-direction: column;
+            }
+            .div-two{
+                display: flex;
+                flex-direction: column;
+            }
         }
         
-    }
+        .search-card{
+            text-align: center;
+        }
+
+        .map-card-container{
+            display: grid;
+            grid-template-columns: 50% 50%;
+            column-gap: 2px;
+            justify-items: center;
+            div{
+                margin: 5px;
+            }
+        }
+        
+        .city-card{
+            background-image:none;
+            height: 650px;
+
+            border-bottom: 2px solid nth($lista, 2);
+            box-shadow:nth($lista, 4) 5px 5px 5px;
+            h1{
+                color: $efectos;
+                text-shadow:nth($lista, 3) 5px 5px 5px;
+            }
+        }
+        .data-card-conteiner{
+            display: flex;
+            flex-direction: column;
+        }
+        }
 
 
     .title-card{
@@ -84,73 +208,43 @@
         font-family: Quicksand;
         font-size: 45px;
         font-weight: 500;
-    }
+        }
     
     .subtitle-card{
         color:nth($lista, 3);
         font-size: 27px;
         font-weight: 200;
+        padding: 5px;
         text-shadow:nth($lista, 1) 2px 3px 2px;
-    }
+        }
 
     .letters{
         font-size: 27px;
         font-weight: 500;
+        padding: 9px;
     
         color:nth($lista, 3);
         text-shadow: nth($lista, 1) 2px 2px 2px;
+        }
     }
 }
 
 
-@media (max-width:600px){
+@media (max-width:815px){
     body{
         width: 100vmax;
-    }
-
-    header{
-        width: 100vmax;
-    }
-    .hero-card{
-        width: 100vmax;
-        font-size: 10px;
-    }
-
-    .contact-card{
-        background-image: none;
-        color:var(--extra);
-        text-shadow: var(--efectos) 2px 4px 2px;
-        background-color: var(--efectos2);
-        border: var(--efectos2) 2px solid;
-        box-shadow: var(--efectos) 5px 5px 5px;
-    }
-    
-    .gym-card-container{
-        width: 100vmax;
-        align-items: center;
-    }
+        main{
+            .search-card{
+                text-align: center;
+            }
+            .map-card-container{
+                display: grid;
+                grid-template-columns: 100%;
+                justify-items: center;
+                div{
+                    margin: 5px;
+                    }
+            }
+        }
 }
-
-@media (max-width: 400px){
-    .hero-card{
-        background-image: none;
-        color:var(--extra);
-        text-shadow: var(--efectos) 2px 4px 2px;
-        background-color: var(--efectos2);
-        border: var(--efectos2) 2px solid;
-        box-shadow: var(--efectos) 5px 5px 5px;
-    }
-    .button-two{
-        border: var(--extra) 2px solid;
-        color: var(--extra);
-    }
-
-    .contact-card{
-        background-image: none;
-        color:var(--extra);
-        text-shadow: var(--efectos) 2px 4px 2px;
-        background-color: var(--efectos2);
-        border: var(--efectos2) 2px solid;
-        box-shadow: var(--efectos) 5px 5px 5px;
-    }
 }

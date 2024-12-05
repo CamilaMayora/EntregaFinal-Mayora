@@ -118,8 +118,6 @@ main{
 
     .we-card{
         color:nth($lista, 3);
-        font-size: 30px;
-        font-weight: 400;
         text-align: center;
         margin-top: 60px;
         
@@ -218,7 +216,7 @@ main{
         text-align: center;
         input{
             width: 350px;
-            border-radius: 5px;
+            @include borde-redondo;
             height: 50px;
             background-color:$fondo;
             border-color:nth($lista, 3);
@@ -228,7 +226,7 @@ main{
     .map-card-container{
         display: grid;
         grid-template-columns:1fr 1fr 1fr 1fr;
-        gap: 5px; 
+        column-gap: 5px; 
         div{
             border:nth($lista, 1) 2px solid;
             box-shadow:nth($lista, 4) 5px 5px 5px;
