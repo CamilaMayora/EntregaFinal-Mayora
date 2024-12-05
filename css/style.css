@@ -369,34 +369,18 @@ nav a:hover{
     margin: 15px;
 }
 
-#div-one{
+.div-one{
     display: flex;
     align-items: center;
 }
 
-#div-two{
-    display: flex;
-    flex-direction: row-reverse;
-    align-items: center;
-}
-
-#div-three{
-    display: flex;
-    align-items: center;
-}
-
-#div-four{
-    display: flex;
-    align-items: center;
-}
-
-#div-five{
+.div-two{
     display: flex;
     flex-direction: row-reverse;
     align-items: center;
 }
 
-.clases-card img{
+.div-one img{
     height: 500px;
     width: 600px;
     margin: 10px;
@@ -404,6 +388,16 @@ nav a:hover{
     border: var(--efectos) 1px solid;
     box-shadow: var(--efectos) 3px 3px 3px;
 }
+
+.div-two img{
+    height: 500px;
+    width: 600px;
+    margin: 10px;
+
+    border: var(--efectos) 1px solid;
+    box-shadow: var(--efectos) 3px 3px 3px;
+}
+
 
 /*!--CONTACTO--*/
 .contact-card{

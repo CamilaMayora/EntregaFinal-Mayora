@@ -54,7 +54,7 @@ body {
   margin-bottom: 50px;
   position: relative;
   text-align: center;
-  text-shadow: #ffffff 2px 3px 2px;
+  text-shadow: 2px 3px 2px #ffffff;
 }
 
 .subtitle-card {
@@ -62,6 +62,14 @@ body {
   font-size: 25px;
   font-weight: 400;
   text-shadow: #ff80b3 2px 3px 2px;
+}
+
+/*!---LETRAS---*/
+.letters {
+  font-size: 25px;
+  font-weight: 600;
+  color: #ffffff;
+  text-shadow: 2px 2px 2px #ff80b3;
 }
 
 header {
@@ -102,7 +110,7 @@ header nav #link li a:hover {
 
 main .hero-card {
   color: #b25780;
-  text-shadow: #ffffff 3px 2px 2px;
+  text-shadow: 3px 2px 2px #ffffff;
   text-align: center;
   margin-top: 60px;
   background-image: url("../img/onlymujeres.jpg");
@@ -206,6 +214,157 @@ main .arrow-card {
   right: 40px;
   bottom: 90px;
 }
+main .we-card {
+  color: #ffffff;
+  font-size: 30px;
+  font-weight: 400;
+  text-align: center;
+  margin-top: 60px;
+  background-image: url("../img/img-4.jpg");
+  background-position: top;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  height: 700px;
+}
+main .we-card h1 {
+  font-size: 80px;
+  color: #ffffff;
+  font-weight: 800;
+  text-align: center;
+  display: inline-block;
+  margin-top: 100px;
+  text-shadow: #ff80b3 5px 5px 5px;
+}
+main .we-card h4 {
+  font-size: 45px;
+  font-weight: 800;
+  color: #ffffff;
+  display: inline-block;
+  text-align: center;
+  text-shadow: #ff80b3 5px 5px 5px;
+  margin-top: 20px;
+}
+main .clases_card {
+  font-size: 35px;
+  color: #ffffff;
+  font-weight: 500;
+  margin: 15px;
+}
+main .div-one {
+  display: flex;
+  align-items: center;
+}
+main .div-one img {
+  height: 500px;
+  margin: 10px;
+  width: 600px;
+  box-shadow: #ff80b3 3px 3px 3px;
+  border: #ff80b3 1px solid;
+}
+main .div-two {
+  display: flex;
+  align-items: center;
+  flex-direction: row-reverse;
+}
+main .div-two img {
+  height: 500px;
+  margin: 10px;
+  width: 600px;
+  box-shadow: #ff80b3 3px 3px 3px;
+  border: #ff80b3 1px solid;
+}
+main .contact-card {
+  color: #b25780;
+  background-image: url("../img/img-6.png");
+  text-shadow: #ffffff 2px 4px 2px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: fixed;
+  background-size: cover;
+  margin-top: 50px;
+  height: 750px;
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  flex-direction: column;
+}
+main .contact-card h1 {
+  font-size: 80px;
+  font-weight: 800;
+}
+main .form-card-one {
+  color: #ff80b3;
+  text-shadow: #ffffff 2px 1px 1px;
+  font-size: 20px;
+  padding: 5px;
+  margin: 10px;
+}
+main .search-card {
+  text-align: center;
+}
+main .search-card input {
+  width: 350px;
+  border-radius: 5px;
+  height: 50px;
+  background-color: #52253d;
+  border-color: #ffffff;
+}
+main .map-card-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  gap: 5px;
+}
+main .map-card-container div {
+  border: #ff80b3 2px solid;
+  box-shadow: #c15970 5px 5px 5px;
+  background-color: rgba(143, 75, 111, 0.4039215686);
+  color: #ffffff;
+  margin: 15px;
+  height: 600px;
+  width: 400px;
+}
+main .city-card {
+  background-image: url("../img/img-4.jpg");
+  background-position: start;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  height: 750px;
+  margin-top: 50px;
+  text-align: center;
+}
+main .city-card h1 {
+  font-size: 80px;
+  font-weight: 800;
+  color: #b25780;
+  display: flex;
+  justify-content: center;
+  padding: 100px;
+  text-shadow: #ffffff 5px 5px 5px;
+}
+main .data-card {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-content: stretch;
+}
+main .data-card-conteiner {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  align-items: center;
+  color: #b25780;
+  font-size: 25px;
+  font-weight: 400;
+  margin: 15px;
+  padding: 5px;
+}
+main .data-card-conteiner img {
+  width: 700px;
+  height: 600px;
+}
 
 .footer-card {
   display: flex;
@@ -232,6 +391,137 @@ main .arrow-card {
 .footer-card div {
   margin-top: 10px;
   padding: 10px;
+}
+
+@media (max-width: 950px) {
+  body {
+    width: 100vmax;
+  }
+  header {
+    width: 100vmax;
+  }
+  header nav .menu-icon {
+    display: block;
+    cursor: pointer;
+    color: #ffffff;
+  }
+  header nav #link {
+    display: none;
+    width: 100%;
+    text-align: start;
+    position: absolute;
+    padding-top: 20px;
+    background-color: #b25780;
+    border-bottom: #ffffff 2px solid;
+    width: 100vmax;
+  }
+  header nav #link li a {
+    color: #ffffff;
+    text-shadow: #52253d 1px 1px 1px;
+  }
+  header nav #menu:checked + .menu-icon + #link {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  main .hero-card {
+    background-image: none;
+    background-color: #52253d;
+    box-shadow: #ffffff 5px 5px 5px;
+  }
+  main .hero-card h1 {
+    font-size: 70px;
+    font-weight: 600;
+  }
+  main .hero-card h2 {
+    font-size: 30px;
+    color: #ffffff;
+    text-shadow: #ff80b3 3px 2px 2px;
+  }
+  main .hero-card button {
+    color: #ffffff;
+    border: #ffffff 2px solid;
+  }
+  main .contact-card {
+    background-image: none;
+    color: #ffffff;
+    text-shadow: #ff80b3 2px 4px 2px;
+    background-color: rgba(143, 75, 111, 0.4039215686);
+    border: rgba(143, 75, 111, 0.4039215686) 2px solid;
+    box-shadow: rgba(143, 75, 111, 0.4039215686) 5px 5px 5px;
+  }
+  main .contact-card h1 {
+    font-size: 70px;
+    font-weight: 600;
+  }
+  main .gym-card-container {
+    width: 100vmax;
+    align-items: center;
+  }
+  .title-card {
+    color: #b25780;
+    font-family: Quicksand;
+    font-size: 45px;
+    font-weight: 500;
+  }
+  .subtitle-card {
+    color: #ffffff;
+    font-size: 27px;
+    font-weight: 200;
+    text-shadow: #ff80b3 2px 3px 2px;
+  }
+  .letters {
+    font-size: 27px;
+    font-weight: 500;
+    color: #ffffff;
+    text-shadow: #ff80b3 2px 2px 2px;
+  }
+}
+@media (max-width: 600px) {
+  body {
+    width: 100vmax;
+  }
+  header {
+    width: 100vmax;
+  }
+  .hero-card {
+    width: 100vmax;
+    font-size: 10px;
+  }
+  .contact-card {
+    background-image: none;
+    color: var(--extra);
+    text-shadow: var(--efectos) 2px 4px 2px;
+    background-color: var(--efectos2);
+    border: var(--efectos2) 2px solid;
+    box-shadow: var(--efectos) 5px 5px 5px;
+  }
+  .gym-card-container {
+    width: 100vmax;
+    align-items: center;
+  }
+}
+@media (max-width: 400px) {
+  .hero-card {
+    background-image: none;
+    color: var(--extra);
+    text-shadow: var(--efectos) 2px 4px 2px;
+    background-color: var(--efectos2);
+    border: var(--efectos2) 2px solid;
+    box-shadow: var(--efectos) 5px 5px 5px;
+  }
+  .button-two {
+    border: var(--extra) 2px solid;
+    color: var(--extra);
+  }
+  .contact-card {
+    background-image: none;
+    color: var(--extra);
+    text-shadow: var(--efectos) 2px 4px 2px;
+    background-color: var(--efectos2);
+    border: var(--efectos2) 2px solid;
+    box-shadow: var(--efectos) 5px 5px 5px;
+  }
 }
 
 /*# sourceMappingURL=estilos.css.map */

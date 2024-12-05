@@ -1,0 +1,156 @@
+@media (max-width:950px) {
+    body{
+        width: 100vmax;
+    }
+    header{
+        width: 100vmax;
+        nav{
+            .menu-icon{
+                display: block;
+                cursor: pointer;
+                color:nth($lista, 3);
+            }
+            
+            #link{
+                display: none;
+                width: 100%;
+                text-align: start;
+                position: absolute;
+                padding-top: 20px;
+                background-color:$letras;
+                border-bottom:nth($lista, 3) 2px solid;
+                width: 100vmax;
+
+                li a{
+                    color:nth($lista, 3);
+                    text-shadow:$fondo 1px 1px 1px;
+                    }
+            }  
+            #menu:checked + .menu-icon + #link {
+                display: flex;
+                flex-direction: column;
+                align-items: flex-start;
+            }
+        }
+    }
+
+    main{
+        .hero-card{
+            background-image: none;
+            background-color:$fondo;
+            box-shadow:nth($lista, 3) 5px 5px 5px;
+
+            h1{
+                font-size: 70px;
+                font-weight: 600;
+            }
+
+            h2{
+                font-size: 30px;
+                color: nth($lista, 3);
+                text-shadow: nth($lista, 1) 3px 2px 2px;
+            }
+
+            button{
+                color:nth($lista, 3);
+                border:nth($lista, 3) 2px solid;
+            }
+        }
+
+        .contact-card{
+            background-image: none;
+            color:nth($lista, 3);
+            text-shadow:nth($lista, 1) 2px 4px 2px;
+            background-color:nth($lista, 2);
+            border:nth($lista, 2) 2px solid;
+            box-shadow:nth($lista, 2) 5px 5px 5px;
+
+            h1{
+                font-size: 70px;
+                font-weight: 600;
+            }
+        }
+
+        .gym-card-container{
+            width: 100vmax;
+            align-items: center;
+        }
+        
+    }
+
+
+    .title-card{
+        color:$letras;
+        font-family: Quicksand;
+        font-size: 45px;
+        font-weight: 500;
+    }
+    
+    .subtitle-card{
+        color:nth($lista, 3);
+        font-size: 27px;
+        font-weight: 200;
+        text-shadow:nth($lista, 1) 2px 3px 2px;
+    }
+
+    .letters{
+        font-size: 27px;
+        font-weight: 500;
+    
+        color:nth($lista, 3);
+        text-shadow: nth($lista, 1) 2px 2px 2px;
+    }
+}
+
+
+@media (max-width:600px){
+    body{
+        width: 100vmax;
+    }
+
+    header{
+        width: 100vmax;
+    }
+    .hero-card{
+        width: 100vmax;
+        font-size: 10px;
+    }
+
+    .contact-card{
+        background-image: none;
+        color:var(--extra);
+        text-shadow: var(--efectos) 2px 4px 2px;
+        background-color: var(--efectos2);
+        border: var(--efectos2) 2px solid;
+        box-shadow: var(--efectos) 5px 5px 5px;
+    }
+    
+    .gym-card-container{
+        width: 100vmax;
+        align-items: center;
+    }
+}
+
+@media (max-width: 400px){
+    .hero-card{
+        background-image: none;
+        color:var(--extra);
+        text-shadow: var(--efectos) 2px 4px 2px;
+        background-color: var(--efectos2);
+        border: var(--efectos2) 2px solid;
+        box-shadow: var(--efectos) 5px 5px 5px;
+    }
+    .button-two{
+        border: var(--extra) 2px solid;
+        color: var(--extra);
+    }
+
+    .contact-card{
+        background-image: none;
+        color:var(--extra);
+        text-shadow: var(--efectos) 2px 4px 2px;
+        background-color: var(--efectos2);
+        border: var(--efectos2) 2px solid;
+        box-shadow: var(--efectos) 5px 5px 5px;
+    }
+}

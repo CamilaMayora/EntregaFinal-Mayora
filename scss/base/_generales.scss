@@ -20,11 +20,11 @@ body{
     padding: 5px;
     background-color: $fondo;
     cursor: pointer;
-    color:$extra;
+    color:nth($lista, 3);
     &:hover{
-        background-color:$efectos;
-        color:$extra2;
-        border:2px solid $extra2;
+        background-color:nth($lista, 1);
+        color:nth($lista, 4);
+        border:2px solid nth($lista, 4);
     }
 }
 
@@ -42,9 +42,9 @@ body{
     background-color:$fondo;
     &:hover{
 
-        background-color:$efectos;
-        color:$extra;
-        border:2px solid $extra2 ;
+        background-color:nth($lista, 1);
+        color:nth($lista, 3);
+        border:2px solid nth($lista, 4) ;
     }
 }
 
@@ -60,12 +60,21 @@ body{
     position: relative;
     text-align: center;
 
-    text-shadow:$extra 2px 3px 2px;
+    text-shadow:2px 3px 2px nth($lista, 3);
 }
 
 .subtitle-card{
-    color:$extra;
+    color:nth($lista, 3);
     font-size: 25px;
     font-weight: 400;
-    text-shadow:$efectos 2px 3px 2px;
+    text-shadow:nth($lista, 1) 2px 3px 2px;
+}
+
+/*!---LETRAS---*/
+.letters{
+    font-size: 25px;
+    font-weight: 600;
+
+    color:nth($lista, 3);
+    text-shadow:2px 2px 2px nth($lista, 1);
 }
