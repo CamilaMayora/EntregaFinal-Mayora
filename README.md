@@ -1,4 +1,4 @@
-<p align="center">Camila Mayora💋💁</p>
+<p align="center">Camila Mayora💁</p>
 
 ###
 
@@ -8,19 +8,13 @@
 
 <br clear="both">
 
-<p align="center">Index + pag "Contacto": Responsive + Bootstrap 😯😰</p>
+<p align="center">Responsive hecho en todas las paginas 😯</p>
 
 ###
 
 <br clear="both">
 
-<p align="center">Pag "Sucursales": Grids.😰</p>
-
-###
-
-<br clear="both">
-
-<p align="center">Pag "SobreNosotros" + "Ciudad": Css basico y algunas cosas con flexbox😉</p>
+<p align="center">aniamcion en botones😰</p>
 
 ###
 
