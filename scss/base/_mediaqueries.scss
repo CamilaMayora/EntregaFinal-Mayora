@@ -41,7 +41,7 @@ body{
                     border-bottom: 2px solid nth($lista, 2);
                     box-shadow:nth($lista, 4) 5px 5px 5px;
                     h1{
-                        color: $efectos;
+                        color: nth($lista, 1);
                         text-shadow:nth($lista, 3) 5px 5px 5px;
                     }
                 }
@@ -192,7 +192,7 @@ body{
             border-bottom: 2px solid nth($lista, 2);
             box-shadow:nth($lista, 4) 5px 5px 5px;
             h1{
-                color: $efectos;
+                color: nth($lista, 1);
                 text-shadow:nth($lista, 3) 5px 5px 5px;
             }
         }
