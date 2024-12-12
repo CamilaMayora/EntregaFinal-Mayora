@@ -66,8 +66,8 @@ body{
     font-size: 50px;
     font-weight: 700;
     
-    margin-top: 100px;
-    margin-bottom: 50px;
+    margin-top: 60px;
+    margin-bottom: 25px;
     position: relative;
     text-align: center;
 
@@ -79,6 +79,7 @@ body{
     font-size: 25px;
     font-weight: 400;
     text-shadow:nth($lista, 1) 2px 3px 2px;
+    padding: 10px;
 }
 
 /*!---LETRAS---*/
