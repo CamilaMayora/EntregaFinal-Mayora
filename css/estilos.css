@@ -397,6 +397,23 @@ main .data-card-conteiner img {
   padding: 10px;
 }
 
+@media screen and (max-width: 1600px) {
+  body {
+    width: 100%;
+  }
+  body main .search-card {
+    text-align: center;
+  }
+  body main .map-card-container {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    column-gap: 20px;
+    justify-items: center;
+  }
+  body main .map-card-container div {
+    margin: 5px;
+  }
+}
 @media screen and (max-width: 1400px) {
   body {
     width: 100%;
@@ -470,7 +487,7 @@ main .data-card-conteiner img {
     text-shadow: #ff80b3 2px 2px 2px;
   }
 }
-@media screen and (max-width: 1024px) {
+@media screen and (max-width: 1180px) {
   body {
     width: 100%;
   }
