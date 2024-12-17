@@ -103,15 +103,14 @@ header nav .menu {
 }
 header nav #link {
   display: grid;
-  grid-template-columns: 200px 200px 200px 200px 200px;
+  grid-template-columns: 100px 100px 100px 100px 100px 100px;
   column-gap: 10px;
-  justify-content: center;
   align-items: center;
+  justify-content: space-around;
   justify-items: center;
 }
 header nav #link li {
   list-style: none;
-  margin-top: 20px;
   font-size: 20px;
   font-weight: 600;
 }
@@ -200,7 +199,7 @@ main .pay-card-container .card {
   width: 250px;
   font-size: 18px;
 }
-main .pay-card-container h5 {
+main .pay-card-container h4 {
   text-align: center;
   border-bottom: #ff80b3 2px solid;
   font-size: 30px;
@@ -221,7 +220,7 @@ main .text-card {
   font-size: 30px;
   text-align: center;
 }
-main .text-card h2 {
+main .text-card h3 {
   color: #b25780;
   text-shadow: #ffffff 2px 2px 2px;
 }
@@ -258,6 +257,7 @@ main .clases_card {
 main .div-one {
   display: flex;
   align-items: center;
+  padding: 10px;
 }
 main .div-one img {
   height: 500px;
@@ -267,6 +267,7 @@ main .div-one img {
   border: #ff80b3 1px solid;
 }
 main .div-two {
+  padding: 10px;
   display: flex;
   align-items: center;
   flex-direction: row-reverse;
@@ -328,13 +329,16 @@ main .map-card-container div {
   height: 600px;
   width: 400px;
 }
+main .map-card-container div iframe {
+  width: 100%;
+}
 main .city-card {
   background-image: url("../img/img-4.jpg");
   background-position: start;
   background-repeat: no-repeat;
   background-size: cover;
   background-attachment: fixed;
-  height: 750px;
+  height: 500px;
   margin-top: 50px;
   text-align: center;
 }
@@ -398,88 +402,147 @@ main .data-card-conteiner img {
 }
 
 @media screen and (max-width: 1600px) {
-  body {
+  main {
     width: 100%;
   }
-  body main .search-card {
-    text-align: center;
-  }
-  body main .map-card-container {
-    display: grid;
-    grid-template-columns: 50% 50%;
-    column-gap: 20px;
-    justify-items: center;
-  }
-  body main .map-card-container div {
-    margin: 5px;
-  }
-}
-@media screen and (max-width: 1400px) {
-  body {
-    width: 100%;
-  }
-  body main .hero-card h1 {
+  main .hero-card h1 {
     font-size: 70px;
     font-weight: 600;
   }
-  body main .hero-card h2 {
+  main .hero-card h2 {
     font-size: 30px;
   }
-  body main .gym-card-container {
+  main .gym-card-container {
     display: flex;
     flex-direction: row;
     align-content: center;
   }
-  body main .gym-card-container div {
+  main .gym-card-container div {
     margin: 10px;
     height: 640px;
   }
-  body main .we-card h1 {
+  main .we-card h1 {
     font-size: 70px;
     font-weight: 600;
   }
-  body main .clases-card {
+  main .clases-card {
     padding: 15px;
   }
-  body main .search-card {
+  main .search-card {
     text-align: center;
   }
-  body main .map-card-container {
+  main .map-card-container {
     display: grid;
     grid-template-columns: 50% 50%;
     column-gap: 20px;
     justify-items: center;
   }
-  body main .map-card-container div {
+  main .map-card-container div {
     margin: 5px;
   }
-  body main .city-card {
+  main .city-card {
     height: 650px;
     border-bottom: 2px solid rgba(143, 75, 111, 0.4039215686);
     box-shadow: #c15970 5px 5px 5px;
   }
-  body main .city-card h1 {
+  main .city-card h1 {
     color: #ff80b3;
     text-shadow: #ffffff 5px 5px 5px;
   }
-  body main .data-card-conteiner {
+  main .data-card-conteiner {
     display: flex;
     flex-direction: column;
   }
-  body .title-card {
+  .title-card {
     color: #b25780;
     font-family: Quicksand;
     font-size: 45px;
     font-weight: 500;
   }
-  body .subtitle-card {
+  .subtitle-card {
     color: #ffffff;
     font-size: 27px;
     font-weight: 200;
     padding: 5px;
     text-shadow: #ff80b3 2px 3px 2px;
   }
-  body .letters {
+  .letters {
+    font-size: 27px;
+    font-weight: 500;
+    padding: 9px;
+    color: #ffffff;
+    text-shadow: #ff80b3 2px 2px 2px;
+  }
+}
+@media screen and (max-width: 1400px) {
+  header {
+    width: 100%;
+  }
+  main {
+    width: 100%;
+  }
+  main .hero-card h1 {
+    font-size: 70px;
+    font-weight: 600;
+  }
+  main .hero-card h2 {
+    font-size: 30px;
+  }
+  main .gym-card-container {
+    display: flex;
+    flex-direction: row;
+    align-content: center;
+  }
+  main .gym-card-container div {
+    margin: 10px;
+    height: 640px;
+  }
+  main .we-card h1 {
+    font-size: 70px;
+    font-weight: 600;
+  }
+  main .clases-card {
+    padding: 15px;
+  }
+  main .search-card {
+    text-align: center;
+  }
+  main .map-card-container {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    column-gap: 20px;
+    justify-items: center;
+  }
+  main .map-card-container div {
+    margin: 5px;
+  }
+  main .city-card {
+    height: 650px;
+    border-bottom: 2px solid rgba(143, 75, 111, 0.4039215686);
+    box-shadow: #c15970 5px 5px 5px;
+  }
+  main .city-card h1 {
+    color: #ff80b3;
+    text-shadow: #ffffff 5px 5px 5px;
+  }
+  main .data-card-conteiner {
+    display: flex;
+    flex-direction: column;
+  }
+  .title-card {
+    color: #b25780;
+    font-family: Quicksand;
+    font-size: 45px;
+    font-weight: 500;
+  }
+  .subtitle-card {
+    color: #ffffff;
+    font-size: 27px;
+    font-weight: 200;
+    padding: 5px;
+    text-shadow: #ff80b3 2px 3px 2px;
+  }
+  .letters {
     font-size: 27px;
     font-weight: 500;
     padding: 9px;
@@ -488,15 +551,15 @@ main .data-card-conteiner img {
   }
 }
 @media screen and (max-width: 1180px) {
-  body {
+  header {
     width: 100%;
   }
-  body header nav .menu-icon {
+  header nav .menu-icon {
     display: block;
     cursor: pointer;
     color: #ffffff;
   }
-  body header nav #link {
+  header nav #link {
     display: none;
     width: 100%;
     text-align: start;
@@ -506,117 +569,117 @@ main .data-card-conteiner img {
     border-bottom: #ffffff 2px solid;
     width: 100vmax;
   }
-  body header nav #link li a {
+  header nav #link li a {
     color: #ffffff;
     text-shadow: #52253d 1px 1px 1px;
   }
-  body header nav #menu:checked + .menu-icon + #link {
+  header nav #menu:checked + .menu-icon + #link {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
   }
-  body main .hero-card {
+  main .hero-card {
     background-color: #52253d;
     box-shadow: #ffffff 5px 5px 5px;
   }
-  body main .hero-card h1 {
+  main .hero-card h1 {
     font-size: 70px;
     font-weight: 600;
   }
-  body main .hero-card h2 {
+  main .hero-card h2 {
     font-size: 30px;
     color: #ffffff;
     text-shadow: #ff80b3 3px 2px 2px;
   }
-  body main .hero-card button {
+  main .hero-card button {
     color: #ffffff;
     border: #ffffff 2px solid;
   }
-  body main .contact-card {
+  main .contact-card {
     color: #ffffff;
     text-shadow: #ff80b3 2px 4px 2px;
     background-color: rgba(143, 75, 111, 0.4039215686);
     border: rgba(143, 75, 111, 0.4039215686) 2px solid;
     box-shadow: rgba(143, 75, 111, 0.4039215686) 5px 5px 5px;
   }
-  body main .contact-card h1 {
+  main .contact-card h1 {
     font-size: 70px;
     font-weight: 600;
   }
-  body main .gym-card-container {
+  main .gym-card-container {
     display: flex;
     flex-direction: column;
     align-content: center;
   }
-  body main .gym-card-container div {
+  main .gym-card-container div {
     height: 640px;
   }
-  body main .text-card {
+  main .text-card {
     display: flex;
     align-items: center;
     flex-direction: column;
   }
-  body main .we-card {
+  main .we-card {
     border-bottom: rgba(143, 75, 111, 0.4039215686) 2px solid;
     background-color: rgba(143, 75, 111, 0.4039215686);
     box-shadow: 5px 5px 5px #ff80b3;
   }
-  body main .we-card h1 {
+  main .we-card h1 {
     color: #ff80b3;
     text-shadow: #ffffff 2px 2px 2px;
   }
-  body main .clases-card {
+  main .clases-card {
     text-align: center;
     padding: 5px;
     margin: 5px;
   }
-  body main .clases-card .div-one {
+  main .clases-card .div-one {
     display: flex;
     flex-direction: column;
   }
-  body main .clases-card .div-two {
+  main .clases-card .div-two {
     display: flex;
     flex-direction: column;
   }
-  body main .search-card {
+  main .search-card {
     text-align: center;
   }
-  body main .map-card-container {
+  main .map-card-container {
     display: grid;
     grid-template-columns: 50% 50%;
     column-gap: 2px;
     justify-items: center;
   }
-  body main .map-card-container div {
+  main .map-card-container div {
     margin: 5px;
   }
-  body main .city-card {
+  main .city-card {
     height: 650px;
     border-bottom: 2px solid rgba(143, 75, 111, 0.4039215686);
     box-shadow: #c15970 5px 5px 5px;
   }
-  body main .city-card h1 {
+  main .city-card h1 {
     color: #ff80b3;
     text-shadow: #ffffff 5px 5px 5px;
   }
-  body main .data-card-conteiner {
+  main .data-card-conteiner {
     display: flex;
     flex-direction: column;
   }
-  body .title-card {
+  .title-card {
     color: #b25780;
     font-family: Quicksand;
     font-size: 45px;
     font-weight: 500;
   }
-  body .subtitle-card {
+  .subtitle-card {
     color: #ffffff;
     font-size: 27px;
     font-weight: 200;
     padding: 5px;
     text-shadow: #ff80b3 2px 3px 2px;
   }
-  body .letters {
+  .letters {
     font-size: 27px;
     font-weight: 500;
     padding: 9px;
@@ -625,164 +688,166 @@ main .data-card-conteiner img {
   }
 }
 @media screen and (max-width: 830px) {
-  body {
-    width: 100%;
-  }
-  body main .hero-card {
+  main .hero-card {
     background-image: none;
     background-color: #52253d;
     box-shadow: #ffffff 5px 5px 5px;
   }
-  body main .hero-card h1 {
+  main .hero-card h1 {
     font-size: 50px;
     font-weight: 400;
   }
-  body main .hero-card h2 {
+  main .hero-card h2 {
     font-size: 20px;
   }
-  body main .contact-card {
+  main .contact-card {
     background-image: none;
   }
-  body main .contact-card h1 {
+  main .contact-card h1 {
     font-size: 50px;
     font-weight: 400;
   }
-  body main .we-card {
+  main .we-card {
     background-image: none;
   }
-  body main .city-card {
+  main .city-card {
     background-image: none;
   }
-  body main .city-card h1 {
+  main .city-card h1 {
     font-size: 65px;
   }
-  body main .data-card-conteiner {
+  main .data-card-conteiner {
     text-align: center;
   }
-  body main .data-card-conteiner img {
+  main .data-card-conteiner img {
     height: 300px;
     width: 400px;
   }
-  body main .search-card {
+  main .search-card {
     text-align: center;
   }
-  body main .map-card-container {
+  main .map-card-container {
     display: grid;
     grid-template-columns: 100%;
     justify-items: center;
   }
-  body main .map-card-container div {
+  main .map-card-container div {
     margin: 5px;
   }
-  body .title-card {
+  .title-card {
     font-size: 35px;
     font-weight: 400;
   }
-  body .subtitle-card {
+  .subtitle-card {
     color: #ffffff;
     font-size: 25px;
     font-weight: 200;
   }
-  body .letters {
+  .letters {
     padding: 10px;
     font-size: 25px;
     font-weight: 400;
   }
 }
-@media screen and (max-width: 600px) {
-  body {
-    width: 100%;
-  }
-  body main .hero-card h1 {
+@media screen and (max-width: 650px) {
+  main .hero-card h1 {
     font-size: 30px;
     font-weight: 500;
   }
-  body main .hero-card h2 {
+  main .hero-card h2 {
     display: none;
   }
-  body main .gym-card-container div {
+  main .gym-card-container div {
     height: 550px;
     width: 402px;
   }
-  body main .gym-card-container div img {
+  main .gym-card-container div img {
     height: 300px;
     width: 400px;
   }
-  body main .info-card img {
+  main .info-card img {
     height: 300px;
     width: 400px;
   }
-  body main .pay-card-container .card {
+  main .pay-card-container .card {
     margin: 10px;
   }
-  body main .clases-card .div-one img {
+  main .clases-card .div-one img {
     height: 300px;
     width: 400px;
   }
-  body main .clases-card .div-two img {
+  main .clases-card .div-two img {
     height: 300px;
     width: 400px;
   }
-  body footer {
+  footer {
     text-align: center;
   }
-  body .title-card {
+  .title-card {
     font-size: 50px;
     font-weight: 300;
   }
-  body .subtitle-card {
+  .subtitle-card {
     font-size: 30px;
     font-weight: 100;
   }
-  body .letters {
+  .letters {
     padding: 10px;
     font-size: 25px;
     font-weight: 200;
   }
 }
 @media screen and (max-width: 420px) {
-  body {
+  main .map-card-container div {
+    height: 400px;
+    width: 300px;
+    text-align: center;
+  }
+  main .map-card-container div iframe {
     width: 100%;
   }
-  body main .gym-card-container div {
+  main .map-card-container div p {
+    display: none;
+  }
+  main .gym-card-container div {
     height: 550px;
     width: 302px;
   }
-  body main .gym-card-container div img {
+  main .gym-card-container div img {
     height: 200px;
     width: 300px;
   }
-  body main .info-card img {
+  main .info-card img {
     height: 200px;
     width: 300px;
   }
-  body main .contact-card h1 {
+  main .contact-card h1 {
     font-size: 35px;
   }
-  body main .we-card h1 {
+  main .we-card h1 {
     font-size: 80px;
   }
-  body main .we-card h4 {
+  main .we-card h2 {
     display: none;
   }
-  body main .clases-card .div-one img {
+  main .clases-card .div-one img {
     height: 200px;
     width: 300px;
   }
-  body main .clases-card .div-two img {
+  main .clases-card .div-two img {
     height: 200px;
     width: 300px;
   }
-  body main .data-card-conteiner img {
+  main .data-card-conteiner img {
     height: 200px;
     width: 300px;
   }
-  body .title-card {
+  .title-card {
     padding: 10px;
     font-size: 35px;
     font-weight: 300;
   }
-  body .letters {
+  .letters {
     padding: 17px;
     font-size: 23px;
     font-weight: 300;

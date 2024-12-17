@@ -1,8 +1,33 @@
 @media screen and (max-width: 1600px){
-    body{
-        width: 100%;
-
         main{
+            width: 100%;
+            .hero-card{
+                h1{
+                    font-size: 70px;
+                    font-weight: 600;
+                }
+                h2{
+                    font-size: 30px;
+                }
+            }
+            .gym-card-container{
+                display: flex;
+                flex-direction: row;
+                align-content: center;
+                div{
+                    margin: 10px;
+                    height: 640px;
+                }
+            }
+            .we-card{
+                h1{
+                    font-size: 70px;
+                    font-weight: 600;
+                }
+            }
+            .clases-card{
+                padding: 15px;
+            }
             .search-card{
                 text-align: center;
             }
@@ -15,15 +40,51 @@
                     margin: 5px;
                     }
                 }
+            .city-card{
+                height: 650px;
+                border-bottom: 2px solid nth($lista, 2);
+                box-shadow:nth($lista, 4) 5px 5px 5px;
+                h1{
+                    color: nth($lista, 1);
+                    text-shadow:nth($lista, 3) 5px 5px 5px;
+                    }
+                }
+            .data-card-conteiner{
+                display: flex;
+                flex-direction: column;
+                }
         }
-    }
-}
 
+        .title-card{
+            color:$letras;
+            font-family: Quicksand;
+            font-size: 45px;
+            font-weight: 500;
+            }
+            .subtitle-card{
+                color:nth($lista, 3);
+                font-size: 27px;
+                font-weight: 200;
+                padding: 5px;
+                text-shadow:nth($lista, 1) 2px 3px 2px;
+                }
+            .letters{
+                font-size: 27px;
+                font-weight: 500;
+                padding: 9px;
+                
+                color:nth($lista, 3);
+                text-shadow: nth($lista, 1) 2px 2px 2px;
+                }
+    }
 @media screen and (max-width: 1400px) {
-    body{
+
+    header{
         width: 100%;
+    }   
     
         main{
+            width: 100%;
             .hero-card{
                 h1{
                     font-size: 70px;
@@ -104,14 +165,10 @@
                     color:nth($lista, 3);
                     text-shadow: nth($lista, 1) 2px 2px 2px;
                     }
-        }
-    }
-    
-
+                }       
 @media screen and (max-width:1180px) {
-    body{
-        width: 100%;
     header{
+        width: 100%;
         nav{
             .menu-icon{
                 display: block;
@@ -274,12 +331,7 @@
         text-shadow: nth($lista, 1) 2px 2px 2px;
         }
     }
-}
-
-
 @media screen and (max-width:830px){
-    body{
-        width: 100%;
         main{
             .hero-card{
                 background-image: none;
@@ -350,11 +402,7 @@
                 font-weight: 400;
                 }
         }
-}
-
-@media screen and (max-width: 600px){
-    body{
-        width: 100%;
+@media screen and (max-width: 650px){
 
         main{
 
@@ -430,14 +478,22 @@
             font-weight: 200;
             }
     }
-}
-
-
 @media screen and (max-width: 420px){
-    body{
-        width: 100%;
 
         main{
+            .map-card-container{
+                div{
+                    height: 400px;
+                    width: 300px;
+                    text-align: center;
+                    iframe{
+                        width: 100%;
+                    }
+                    p{
+                        display: none;
+                    }
+                }
+            }
             .gym-card-container{
                 div{
                     height: 550px;
@@ -466,7 +522,7 @@
                 h1{
                     font-size: 80px;
                 }
-                h4{
+                h2{
                     display: none;
                 }
             }
@@ -506,4 +562,3 @@
             font-weight: 300;
             }
     }
-}
