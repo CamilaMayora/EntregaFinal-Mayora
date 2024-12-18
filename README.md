@@ -8,15 +8,7 @@
 
 <br clear="both">
 
-<p align="center">Responsive hecho en todas las paginas 😯</p>
-
-###
-
-<br clear="both">
-
-<p align="center">aniamcion en botones😰</p>
-
-###
+<p align="center">Todo listo.😯</p>
 
 <br clear="both">
 
